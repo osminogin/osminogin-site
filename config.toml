@@ -1,7 +1,7 @@
 languageCode = "en-us"
 title = "Vladimir Osintsev's Site"
-baseurl = "http://example.org/"
-theme = 'hyde'
+baseurl = "https://osminogin.github.io/"
+theme = 'hyde-my'
 
 [params]
   Author = "Vladimir Osintsev"
@@ -14,11 +14,3 @@ theme = 'hyde'
 [taxonomies]
     tag = "tags"
     topic = "topics"
-
-[menus]
-  [[main]]
-    Name = 'aaa'
-	URL = 'bbb'
-  [[main]]
-    Name = 'aaa'
-	URL = 'bbb'
