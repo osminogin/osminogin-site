@@ -1,0 +1,24 @@
+languageCode = "en-us"
+title = "Vladimir Osintsev's Site"
+baseurl = "http://example.org/"
+theme = 'hyde'
+
+[params]
+  Author = "Vladimir Osintsev"
+  Email = "oc@co.ru"
+  linkedin = "osintsev"
+  github = "osminogin"
+  description = "I'm a Systems Engineer and Python developer in love with Django, Docker and Linux."
+  copyright = 'This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)'
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[menus]
+  [[main]]
+    Name = 'aaa'
+	URL = 'bbb'
+  [[main]]
+    Name = 'aaa'
+	URL = 'bbb'
