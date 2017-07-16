@@ -12,6 +12,16 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "taskName": "hugoserver",
+            "command": "hugo",
+            "args": [
+                "server",
+                "--buildDrafts"
+            ],
+            "suppressTaskName": true,
+            "type": "process"
         }
     ]
 }
