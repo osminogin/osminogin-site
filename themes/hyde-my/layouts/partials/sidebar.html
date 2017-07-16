@@ -1,5 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+
+    <!-- Profile -->
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
       <p class="lead">
@@ -7,67 +9,76 @@
       </p>
     </div>
 
-    <ul class="sidebar-nav">
-      <li><a href="/">Home</a> </li>
-      {{ range .Site.Menus.main }}
-        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-      {{end}}
-    </ul>
-    <ul class="sidebar-external">
-      {{ with .Site.Params.github }}
-	  <li>
-			  <a href="https://github.com/{{.}}">
-					  Github
-					  <i class="fa fa-github" aria-hidden="true"></i>
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-      {{ with .Site.Params.linkedin }}
-	  <li>
-			  <a href="https://www.linkedin.com/in/{{.}}">
-					  LinkedIn
-					  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-      {{ with .Site.Params.twitter }}
-	  <li>
-			  <a href="https://twitter.com/{{.}}">
-					  <i class="fa fa-twitter-square"></i>
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-      {{ with .Site.Params.chesscom }}
-	  <li>
-			  <a href="https://www.chess.com/member/{{.}}">
-					  <i class="fa fa-twitter-square"></i>
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-      {{ with .Site.Params.telegram }}
-	  <li>
-			  <a href="https://t.me/{{.}}">
-					  <i class="fa fa-telegram"></i>
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-      {{ with .Site.Params.Email }}
-	  <li>
-			  <a href="mailto:oc@co.ru">
-					  Email
-			  </a>
-	  </li>
-	  {{ else }}{{end}}
-    </ul>
+    <!-- Menu -->
+    <div>
+      <ul class="sidebar-nav">
+        <li><a href="/">Home</a> </li>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+        {{end}}
+      </ul>
+      <ul class="sidebar-external">
+        {{ with .Site.Params.github }}
+      <li>
+          <a href="https://github.com/{{.}}">
+              Github
+              <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+        {{ with .Site.Params.linkedin }}
+      <li>
+          <a href="https://www.linkedin.com/in/{{.}}">
+              LinkedIn
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+        {{ with .Site.Params.twitter }}
+      <li>
+          <a href="https://twitter.com/{{.}}">
+              Twitter
+              <i class="fa fa-twitter-square"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+        {{ with .Site.Params.chesscom }}
+      <li>
+          <a href="https://www.chess.com/member/{{.}}">
+              ChessCom
+              <i class="fa fa-twitter-square"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+        {{ with .Site.Params.steam }}
+      <li>
+          <a href="https://steamcommunity.com/id/{{.}}">
+              <span class="hided">Steam</span>
+              <i class="fa fa-steam-square"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+        {{ with .Site.Params.telegram }}
+      <li>
+          <a href="https://t.me/{{.}}">
+              Telegram
+              <i class="fa fa-telegram"></i>
+          </a>
+      </li>
+      {{ else }}{{end}}
+      </ul>
+    </div>
 
-	<p>
-		<small>
-			{{ with .Site.Params.copyright }}
-				{{ . | markdownify }}
-				<i class="fa fa-creative-commons"></i>
-			{{ else }}
-				&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}
-		</small>
-	</p>
+    <!-- Copyright -->
+    <div>
+      <small>
+        {{ with .Site.Params.copyright }}
+          {{ . | markdownify }}
+          <i class="fa fa-creative-commons"></i>
+        {{ else }}
+          &copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}
+      </small>
+    </div>
+
   </div>
 </div>
