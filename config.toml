@@ -8,6 +8,9 @@ theme = 'hyde-my'
   Email = "oc@co.ru"
   linkedin = "osintsev"
   github = "osminogin"
+  twiter = "osminogin"
+  chesscom = "osminogin"
+  telegram = "osminogin"
   description = "I'm a Systems Engineer and Python developer in love with Django, Docker and Linux."
   copyright = 'This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)'
 
