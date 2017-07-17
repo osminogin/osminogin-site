@@ -1,0 +1,6 @@
+.sidebar-external > li > a > i {
+    font-size: 160%;
+}
+.sidebar-external > li > a > span {
+    display: none;
+}

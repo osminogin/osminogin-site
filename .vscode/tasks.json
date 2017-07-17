@@ -21,7 +21,8 @@
                 "--buildDrafts"
             ],
             "suppressTaskName": true,
-            "type": "process"
+            "type": "process",
+            "problemMatcher": []
         }
     ]
 }
