@@ -8,6 +8,11 @@ Over 12 years in web hosting, networks and public/private cloud systems. Working
 
 Worked on projects for Beeline, PepsiCo, Google Russia, Forbes and etc. Design and deploy large Linux-based clusters for video hostings and streaming services.
 
+---
+
 ## Contacts
 
-Telegram: [@osminogin](https://t.me/osminogin)
+<address>
+Telegram: <a href="https://t.me/osminogin">@osminogin</a><br>
+Email: <span class="reverse">ur.co&#064;co</span>
+</address>
