@@ -2,7 +2,6 @@
 date = "2016-12-07"
 title = "Projects"
 menu = "main"
-
 +++
 
 [www.tornote.org](https://tornote.org/) - anonymous self-destructive notes available in Internet and Tor. Use client-side encryption with SJCL (Stanford Javascript Crypto Library) and light back-end written in Golang (stdlib only). [Source code](https://github.com/osminogin/tornote)
