@@ -3,13 +3,14 @@ address a:hover {
 }
 
 span.reverse {
-  unicode-bidi: bidi-override;
-  direction: rtl;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
 .sidebar-external > li > a > i {
     font-size: 160%;
 }
+
 .sidebar-external > li > a > span {
     display: none;
 }
