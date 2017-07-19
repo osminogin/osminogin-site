@@ -1,27 +1,29 @@
-	{{ partial "head.html" . }}
-	<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3VM8L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) --><Paste>
+ {{ partial "head.html" . }}
+
+<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3VM8L" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<Paste>
 
 		{{ partial "sidebar.html" . }}
 
 		<div class="content container">
 			<div class="post">
-			 	<h1>{{ .Title }}</h1>
+				<h1>{{ .Title }}</h1>
 				{{ if eq .Type "post" }}
-				<span class="post-date">a{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-			  	{{ end }}
-
-				{{ .Content }}
+				<span class="post-date">a{{ .Date.Format "Mon, Jan 2, 2006" }}</span> {{ end }} {{ .Content }}
 			</div>
 
 			{{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
-				<h2>Comments</h2>
-				{{ partial "disqus" . }}
-			{{ end }}
+			<h2>Comments</h2>
+			{{ partial "disqus" . }} {{ end }}
 		</div>
 
 		{{ partial "footer.html" . }}
-  </body>
+
+</body>
+
 </html>
