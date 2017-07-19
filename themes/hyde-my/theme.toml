@@ -7,11 +7,11 @@ features = ["blog", "themes", "disqus"]
 min_version = 0.14
 
 [author]
-    name = "spf13"
-    homepage = "http://spf13.com"
+    name = "osminogin"
+    homepage = "http://osminogin.github.io"
 
 # If Porting existing theme
 [original]
-    author =  "mdo"
-    homepage = "http://markdotto.com/"
-    repo = "https://www.github.com/mdo/hyde"
+    name = "spf13"
+    homepage = "http://spf13.com"
+    repo = "https://github.com/spf13/hyde"
