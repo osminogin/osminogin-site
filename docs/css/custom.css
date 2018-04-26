@@ -1,0 +1,16 @@
+address a:hover {
+    text-decoration: none;
+}
+
+span.reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.sidebar-external > li > a > i {
+    font-size: 160%;
+}
+
+.sidebar-external > li > a > span {
+    display: none;
+}
